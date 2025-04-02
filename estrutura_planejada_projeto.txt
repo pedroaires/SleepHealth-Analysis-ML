@@ -1,0 +1,31 @@
+project_name/
+├── README.md          # Descrição geral do projeto e instruções de uso
+├── data/              # Diretório para armazenar os dados (NÃO subir para o GitHub)
+│   ├── raw/           # Dados brutos baixados automaticamente
+│   ├── processed/     # Dados limpos e transformados
+│   ├── external/      # Dados externos complementares
+│   └── interim/       # Versões intermediárias do dataset, se necessário
+├── notebooks/         # Jupyter Notebooks para exploração e análise
+│   ├── 01_analise_exploratoria.ipynb  # Análise inicial e visualizações + engenharia de features
+│   ├── 02_analise_probabilistica.ipynb   # Criação e transformação de features
+│   ├── 03_modelagem_ml.ipynb          # Treinamento dos modelos
+│   └── 04_avaliacao_resultados.ipynb  # Análise e interpretação dos modelos
+├── src/                # Código-fonte modular do projeto
+│   ├── __init__.py
+│   ├── data/          # Scripts para manipulação dos dados
+│   │   ├── download_data.py   # Script para baixar e organizar os dados
+│   │   ├── preprocess.py      # Funções de limpeza e transformação dos dados
+│   │   ├── feature_engineering.py # Funções para engenharia de features
+│   ├── models/        # Scripts para treinar, salvar e carregar modelos
+│   │   ├── train_model.py  # Treinamento de modelos
+│   │   ├── evaluate_model.py  # Avaliação de modelos
+│   ├── visualization/  # Scripts para geração de gráficos e visualizações
+│   │   ├── plot_data.py  # Gráficos exploratórios
+│   │   ├── plot_results.py  # Visualizações de desempenho dos modelos
+├── tests/              # Scripts de teste para validar funções do projeto
+├── docs/               # Documentação adicional
+├── references/         # Artigos, papers e fontes externas relacionadas ao tema
+├── requirements.txt    # Lista de dependências do projeto
+├── setup.py            # Script para instalação do projeto (se for torná-lo um pacote)
+├── .gitignore          # Arquivo para ignorar `data/`, outputs e arquivos temporários
+└── config.yaml         # Configuração do projeto (se necessário)
